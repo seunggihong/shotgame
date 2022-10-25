@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
-{
+public class Spawner : MonoBehaviour {
     public Wave[] waves;
     public Enemy enemy;
     

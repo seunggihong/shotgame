@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gun : MonoBehaviour
-{
+public class Gun : MonoBehaviour {
     public Transform muzzle;
     public Projectile projectile;
     public float msBetweenShots = 100;

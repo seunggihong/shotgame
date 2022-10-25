@@ -4,24 +4,21 @@ using UnityEngine;
 
 [RequireComponent (typeof (PlayerController))]
 [RequireComponent (typeof (GunController))]
-public class Player : LivingEntity
-{
+public class Player : LivingEntity {
     public float moveSpeed = 5;
 
     Camera viewCamera;
     PlayerController controller;
     GunController gunController;
 
-    protected override void Start()
-    {
+    protected override void Start() {
         base.Start();
         controller = GetComponent<PlayerController>();
         gunController = GetComponent<GunController>();
         viewCamera = Camera.main;
     }
 
-    void Update()
-    {
+    void Update() {
         // Movement input
         Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"),0,Input.GetAxisRaw("Vertical"));
         Vector3 moveVelocity = moveInput.normalized * moveSpeed;
