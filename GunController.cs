@@ -10,7 +10,7 @@ public class GunController : MonoBehaviour
 
     void Start() {
        if(startingGun != null) {
-        EquipGun(startingGun);
+            EquipGun(startingGun);
        }
 
     }
