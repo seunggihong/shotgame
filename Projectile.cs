@@ -15,6 +15,8 @@ public class Projectile : MonoBehaviour
         float moveDistance = speed * Time.deltaTime;
         CheckCollisions(moveDistance);
         transform.Translate(Vector3.forward * moveDistance);
+
+        Destroy(this.gameObject, 3f);
     }
 
     void CheckCollisions(float moveDistance) {
